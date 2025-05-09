@@ -1,32 +1,30 @@
 using System;
+using System.Dynamic;
+using Microsoft.Win32.SafeHandles;
+
+
 
 class Program
 {
     static void Main(string[] args)
     {
+        Console.WriteLine("Hello world");
+
+
+        Circle myCircle = new Circle();
+        myCircle.SetRadius(34);
+        Console.WriteLine($"Radius: {myCircle.GetRadius()}");
+
+
+        Cylinder myCylinder = new Cylinder();
+        myCylinder.SetHeight(40);
+        myCylinder.SetCircle(myCircle);
+
+        Console.WriteLine(myCylinder.GetVolume());
 
 
 
-        List<int> myNumbers = new List<int>();
-
-        myNumbers.Add(99);
-        myNumbers.Add(46);
-        myNumbers.Add(35);
-        
-        myNumbers.Add(39);
-        List<int> myNumbers2 = myNumbers.Append(67).ToList();
-
-        foreach (int i in myNumbers) {
-            Console.WriteLine(i);
-        }
-        Console.WriteLine();
-        foreach (int i in myNumbers2) {
-            Console.WriteLine(i);
-        }
-
-        Console.WriteLine("Hello Sandbox World!");
-
-        Console.WriteLine("Hey how are you?");
-        
     }
 }
+
+
