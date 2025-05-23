@@ -11,14 +11,14 @@ class Program
         Console.WriteLine("Hello world");
 
 
-        Circle myCircle = new Circle();
-        myCircle.SetRadius(34);
+        Circle myCircle = new Circle(34);
+        // myCircle.SetRadius(34);
         Console.WriteLine($"Radius: {myCircle.GetRadius()}");
 
 
-        Cylinder myCylinder = new Cylinder();
-        myCylinder.SetHeight(40);
-        myCylinder.SetCircle(myCircle);
+        Cylinder myCylinder = new Cylinder(100, 45);
+        // myCylinder.SetHeight(40);
+        // myCylinder.SetCircle(myCircle);
 
         Console.WriteLine(myCylinder.GetVolume());
 

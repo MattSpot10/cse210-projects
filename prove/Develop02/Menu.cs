@@ -9,7 +9,7 @@ class Menu
         "Save jounral to file",
         "Quit"
     };
-    public void DisplayMenu(Journal myJournal)
+    public void ProcessMenu(Journal myJournal)
     {
         for (int i = 0; i < _selections.Count; i++)
         {
@@ -29,12 +29,12 @@ class Menu
                 myJournal.DisplayJournal();
                 break;
             case "3":
-                Console.WriteLine("Enter filename: Use [name].txt or [name].csv extention");
+                Console.WriteLine("Enter filename: Use [name].txt or [name].csv extension");
                 string filename = Console.ReadLine();
                 myJournal.LoadJournal(filename);
                 break;
             case "4":
-                Console.WriteLine("Enter filename: Use [name].txt or [name].csv extention");
+                Console.WriteLine("Enter filename: Use [name].txt or [name].csv extension");
                 filename = Console.ReadLine();
                 myJournal.SaveJournal(filename);
                 break;

@@ -12,7 +12,7 @@ class Program
         bool quit = false;
         while (!quit)
         {
-            menu.DisplayMenu(myJournal);
+            menu.ProcessMenu(myJournal);
             quit = menu.Quit();
         }
     }

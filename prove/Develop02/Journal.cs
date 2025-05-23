@@ -9,7 +9,7 @@ class Journal
 
         if (suffix != "txt" && suffix != "csv")
         {
-            Console.WriteLine("Invate file name extention. Please use only .txt or .csv");
+            Console.WriteLine("Invate file name extension. Please use only .txt or .csv");
             return;
         }
         using (StreamWriter outputFile = new StreamWriter(filename))
@@ -55,7 +55,7 @@ class Journal
             }
             return;
         }
-        Console.WriteLine("Invate file name extention. Please use only .txt or .csv");
+        Console.WriteLine("Invate file name extension. Please use only .txt or .csv");
     }
     public void AddEntry(Entry entry)
     {
