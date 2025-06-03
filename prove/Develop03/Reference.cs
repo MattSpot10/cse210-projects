@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 class Reference
 {
-    string _reference;
+    private string _reference;
 
     public Reference(string reference)
     {
