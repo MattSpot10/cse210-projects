@@ -10,17 +10,37 @@ class Program
     {
         Console.WriteLine("Hello world");
 
+        DateTime currentDate = DateTime.Now;
+        DateTime endTime = currentDate.AddSeconds(9);
+        int sleepTime = 250;
+        int count = 9;
+        int diration = 9;
 
-        Circle myCircle = new Circle(34);
-        // myCircle.SetRadius(34);
-        Console.WriteLine($"Radius: {myCircle.GetRadius()}");
+        while (DateTime.Now < endTime)
+        {
+            Console.Write(count--);
+            Thread.Sleep(1000);
+            Console.Write("\b");
 
 
-        Cylinder myCylinder = new Cylinder(100, 45);
-        // myCylinder.SetHeight(40);
-        // myCylinder.SetCircle(myCircle);
+            // currentDate = DateTime.Now;
+            // Console.Write("/");
+            // Thread.Sleep(sleepTime);
+            // Console.Write("\b");
 
-        Console.WriteLine(myCylinder.GetVolume());
+            // Console.Write("|");
+            // Thread.Sleep(sleepTime);
+            // Console.Write("\b");
+
+            // Console.Write("\\");
+            // Thread.Sleep(sleepTime);
+            // Console.Write("\b");
+
+            // Console.Write("-");
+            // Thread.Sleep(sleepTime);
+            // Console.Write("\b");
+        }
+
 
 
 
