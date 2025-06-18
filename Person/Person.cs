@@ -1,4 +1,4 @@
-class Person
+abstract class Person
 {
     private string _firstName;
     private string _lastName;
@@ -15,8 +15,9 @@ class Person
         _lastName = lastname;
         _age = age;
     }
-    public string GetPersonInformation()
+    public virtual string GetPersonInformation()
     {
         return $"{_firstName} {_lastName} age: {_age}";
     }
+    public abstract double GetPay();
 }
