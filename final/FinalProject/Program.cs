@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello FinalProject World!");
+        SpaceInvdadersGame _game = new SpaceInvdadersGame();
+
+        _game.DrawFrame();
     }
 }
