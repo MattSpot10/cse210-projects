@@ -52,4 +52,5 @@ abstract class Object
     {
         _y += 1;
     }
+    abstract public void ShotAt();
 }

@@ -36,6 +36,13 @@ class SpaceInvdadersGame
             Console.WriteLine();
         }
     }
+    public void RenderFrame(char userinput)
+    {
+        ClearFrame();
+
+        
+        DrawFrame();
+    }
     public void DrawOnFrame(Object myObject)
     {
         for (int i = 0; i < myObject.GetHeight(); i++)//y axis

@@ -4,4 +4,10 @@ class Invader : Object
 
     public Invader(int x, int y) : base(x, y, 2, 2, _shape) { }
 
+
+    public override void ShotAt()
+    {
+        
+    }
+
 }
